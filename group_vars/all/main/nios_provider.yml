@@ -1,0 +1,6 @@
+---
+nios:
+  host: 192.168.50.22
+  username: admin   
+  password: infoblox
+  wapi_version: 2.6

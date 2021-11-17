@@ -1,0 +1,5 @@
+---
+parent_network: 10.0.1.0/24
+region: North America
+country: USA
+state: CA

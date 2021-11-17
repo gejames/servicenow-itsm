@@ -1,0 +1,4 @@
+---
+vm:
+  name: nginxproxy_us_west3
+  id: proxy1c
