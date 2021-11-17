@@ -1,0 +1,13 @@
+---
+plugin: servicenow.itsm.now
+ 
+columns:
+  - name
+  - classification
+  - cpu_type
+ 
+group_by:
+  os:
+    includes:
+      - Linux Red Hat
+      - Windows XP
