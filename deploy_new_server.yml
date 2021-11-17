@@ -41,3 +41,7 @@
         ip_address: "{{ new_vm_ip_address[0] }}"
         other:
           vm_inst_id: "{{ instance.id }}" 
+        instance:
+          host: '{{ SN_INSTANCE }}'
+          username: '{{ SN_USERNAME }}'
+          password: '{{ SN_PASSWORD }}'
