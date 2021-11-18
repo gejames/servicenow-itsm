@@ -1,9 +1,14 @@
 plugin: servicenow.itsm.now
- 
+
+instance:
+  host: "{{ snow_host }}"
+  username: "{{ snow_username }}"
+  password: "{{ snow_password }}"
 columns:
   - name
   - classification
   - cpu_type
+  - ip_address
  
 group_by:
   os:
