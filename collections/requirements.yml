@@ -1,3 +1,4 @@
 collections:
-  - servicenow.itsm=1.2
-  - infoblox.nios_modules
+  - name: servicenow.itsm
+    version: 1.2
+  - name: infoblox.nios_modules
