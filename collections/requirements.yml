@@ -1,3 +1,3 @@
 collections:
   - servicenow.itsm
-  - infoblox.nios_modules 
+  - infoblox.nios_modules==1.2
