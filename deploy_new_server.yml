@@ -39,6 +39,6 @@
           vm_inst_id: "{{ vm.id }}"
           os: "{{ vm.os }}"
         instance:
-          host: "{{ SN_HOST }}"
-          username: "{{ SN_USERNAME }}"
-          password: "{{ SN_PASSWORD }}"
+          host: "{{snow_host }}"
+          username: "{{ snow_username }}"
+          password: "{{ snow_password }}"
