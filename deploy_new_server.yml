@@ -15,7 +15,7 @@
         new_vm_ip_address: "{{ lookup('infoblox.nios_modules.nios_next_ip', parent_network,
                             provider={'host': nios.host, 'username': nios.username, 'password': nios.password}) }}"
 
-    - name: set facts about the new vm
+    - name: create unique hostname for new vm
       ansible.builtin.set_fact:
         instance:
           name: "{{ vm.host_name}}-{{ lookup('password', '/dev/null chars=ascii_lowercase,digits length=6') }}"
