@@ -1,4 +1,6 @@
 ---
 vm:
-  name: nginxproxy_us_west3
-  id: proxy1c
+  host_name: 'nginxproxy_us_west'
+  id: 'proxywest'
+  os: 'RHEL8'
+ 

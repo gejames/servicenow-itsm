@@ -22,7 +22,7 @@
     - name: set facts about the new vm
       ansible.builtin.set_fact:
         instance:
-          name: "{{ vm.name }}"
+          name: "{{ vm.host_name}}-{{ lookup('password', '/dev/null chars=ascii_lowercase,digits length=6') }}"
           id: "{{ vm.id }}"
    
 
@@ -36,12 +36,13 @@
 
     - name: register new vm in snow cmdb
       servicenow.itsm.configuration_item:
-        name: "{{ instance.name }}"
+        name: "{{  instance.name }}"
         sys_class_name: cmdb_ci_vm_instance
         ip_address: "{{ new_vm_ip_address[0] }}"
         other:
-          vm_inst_id: "{{ instance.id }}" 
+          vm_inst_id: "{{ vm.id }}"
+          os: "{{ vm.os }}"
         instance:
-          host: "{{ snow_host }}"
-          username: "{{ snow_username }}"
-          password: "{{ snow_password }}"
+          host: "{{ SN_HOST }}"
+          username: "{{ SN_USERNAME }}"
+          password: "{{ SN_PASSWORD }}"
