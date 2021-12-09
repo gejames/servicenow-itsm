@@ -23,7 +23,7 @@
           id: "{{ vm.id }}"
    
 
-    - name: configure an ipv4 host record for {{ instance.name }} {{ new_vm_ip_address[0] }} in NIOS
+    - name: configure an ipv4 host record for {{ instance.name }} in NIOS
       nios_host_record:
         name: "{{ instance.name }}.lab.local"
         ipv4:
