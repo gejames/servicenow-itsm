@@ -2,10 +2,8 @@
 plugin: servicenow.itsm.now
 table: cmdb_ci_vm_instance
 columns:
-  - name
-  - classification
-  - cpu_type
   - ip_address
-
-
+  - name
+  - vm_inst_id
+    
   
